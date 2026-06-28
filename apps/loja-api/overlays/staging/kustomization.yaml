@@ -3,12 +3,9 @@ kind: Kustomization
 resources:
 - ../../base
 namespace: loja-api-staging
+patches:
+- path: ingress-patch.yaml
 images:
 - name: ghcr.io/felipe-e-ribeiro/loja-api
   newName: ghcr.io/felipe-e-ribeiro/loja-api
   newTag: 76c8060
-- name: ghcr.io/felipe-e-ribeiro/pos-loja-api
-  newName: ghcr.io/felipe-e-ribeiro/pos-loja-api
-  newTag: b213144
-patches:
-- path: ingress-patch.yaml
