@@ -6,6 +6,7 @@ metadata:
     app: loja-api
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.org/upstream-zone-size: "0"
 spec:
   ingressClassName: nginx
   tls:
