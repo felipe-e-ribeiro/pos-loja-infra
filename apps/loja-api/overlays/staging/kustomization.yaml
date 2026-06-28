@@ -1,11 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
+- ../../base
 namespace: loja-api-staging
 images:
+- name: ghcr.io/felipe-e-ribeiro/loja-api
+  newName: ghcr.io/felipe-e-ribeiro/loja-api
+  newTag: 76c8060
 - name: ghcr.io/felipe-e-ribeiro/pos-loja-api
   newName: ghcr.io/felipe-e-ribeiro/pos-loja-api
   newTag: b213144
 patches:
-  - path: ingress-patch.yaml
+- path: ingress-patch.yaml
