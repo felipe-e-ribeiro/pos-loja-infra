@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: loja-api
-          image: ghcr.io/felipe-e-ribeiro/loja-api:latest
+          image: ghcr.io/felipe-e-ribeiro/pos-loja-api:latest
           ports:
             - containerPort: 8000
           readinessProbe:
