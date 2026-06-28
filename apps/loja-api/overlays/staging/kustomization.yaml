@@ -5,7 +5,3 @@ resources:
 namespace: loja-api-staging
 patches:
 - path: ingress-patch.yaml
-images:
-- name: ghcr.io/felipe-e-ribeiro/loja-api
-  newName: ghcr.io/felipe-e-ribeiro/loja-api
-  newTag: 76c8060
