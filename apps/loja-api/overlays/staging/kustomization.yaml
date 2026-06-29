@@ -8,4 +8,4 @@ patches:
 images:
 - name: ghcr.io/felipe-e-ribeiro/pos-loja-api
   newName: ghcr.io/felipe-e-ribeiro/pos-loja-api
-  newTag: a161f5a
+  newTag: "8450253"
